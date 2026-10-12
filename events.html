@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Үйл ажиллагаа | Төв аймгийн хөгжлийн бэрхшээлтэй иргэдийн холбоо</title>
+  <meta name="description" content="Төв аймгийн хөгжлийн бэрхшээлтэй иргэдийн холбооны үйл ажиллагаа: хөдөлмөр эрхлэлтийн дэмжлэг, нийгмийн оролцоо, мэдээлэл, сургалт, арга хэмжээнүүд.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231A6B8A'/><text x='50' y='68' font-size='54' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>ТБ</text></svg>">
+  <link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body>
+
+  <!-- ═══════ NAVIGATION ═══════ -->
+  <nav class="nav" role="navigation" aria-label="Үндсэн цэс">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Нүүр хуудас">
+        <span class="nav__logo-icon">ТБ</span>
+        <span class="nav__logo-text">
+          Төв аймгийн ХБИХ
+          <small>Tuv Aimag Association of PWD</small>
+        </span>
+      </a>
+      <div class="nav__links" role="menubar">
+        <a href="index.html" class="nav__link" role="menuitem">Нүүр</a>
+        <a href="about.html" class="nav__link" role="menuitem">Бидний тухай</a>
+        <a href="events.html" class="nav__link nav__link--active" role="menuitem">Үйл ажиллагаа</a>
+        <a href="contact.html" class="nav__link" role="menuitem">Холбоо барих</a>
+        <a href="index.html#donate" class="nav__cta" role="menuitem">Хандивлах</a>
+      </div>
+      <button class="nav__toggle" aria-label="Цэс нээх" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════ PAGE HERO ═══════ -->
+  <section class="hero" style="position:relative; min-height:60vh; display:flex; align-items:center; background: linear-gradient(135deg, rgba(11,43,59,0.88) 0%, rgba(11,43,59,0.62) 100%), url('assets/img/event-1.jpg') center/cover no-repeat;">
+    <div class="container" style="padding-top:120px; padding-bottom:60px;">
+      <span class="label rise" style="color:var(--sage-light); display:block; margin-bottom:var(--space-md);">Үйл ажиллагаа</span>
+      <h1 class="rise rise--delay-1" style="color:var(--white); max-width:620px;">Нийгэмд нэгдэх <span style="color:var(--terracotta-light);">боломжууд</span></h1>
+      <p class="rise rise--delay-2" style="color:rgba(247,244,239,0.75); font-size:var(--text-lg); max-width:540px; margin-top:var(--space-lg); line-height:1.7;">
+        Сургалт, зуучлал, зөвлөгөө, олон нийтийн арга хэмжээ &mdash;
+        хөгжлийн бэрхшээлтэй иргэдийн оролцоог нэмэгдүүлэх чиглэлээр
+        бид тогтмол ажиллаж байна.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════ UPCOMING ═══════ -->
+  <section class="section" style="background:var(--cream);">
+    <div class="container">
+      <div class="section-header rise">
+        <span class="label">Удахгүй</span>
+        <h2>Удахгүй болох <span class="accent-text">үйл ажиллагаа</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:var(--space-xl);">
+        <div class="event-card rise rise--delay-1">
+          <div class="event-card__date">
+            <span class="event-card__date-day">15</span>
+            <span class="event-card__date-month">Арга</span>
+          </div>
+          <div class="event-card__info">
+            <h4>Ажлын байрны зуучлалын өдөрлөг</h4>
+            <p>Хөгжлийн бэрхшээлтэй иргэдэд зориулсан ажлын байрны зуучлал. Ажил олгогчидтой шууд уулзаж, ажлын байрны мэдээлэл авах боломж.</p>
+            <div class="event-card__meta">
+              <span>10:00 цаг</span>
+              <span>Зуунмод хот</span>
+              <span>Нээлттэй</span>
+            </div>
+          </div>
+        </div>
+        <div class="event-card rise rise--delay-2">
+          <div class="event-card__date">
+            <span class="event-card__date-day">28</span>
+            <span class="event-card__date-month">Арга</span>
+          </div>
+          <div class="event-card__info">
+            <h4>Эрх зүйн зөвлөгөө өгөх өдөр</h4>
+            <p>Хөгжлийн бэрхшээлтэй иргэдийн эрх, тэтгэмж, нийгмийн үйлчилгээний талаар хуульч, мэргэжилтнээс үнэгүй зөвлөгөө авах боломж.</p>
+            <div class="event-card__meta">
+              <span>11:00 цаг</span>
+              <span>Холбооны офис</span>
+              <span>Урьдчилан бүртгүүлэх</span>
+            </div>
+          </div>
+        </div>
+        <div class="event-card rise rise--delay-3">
+          <div class="event-card__date">
+            <span class="event-card__date-day">05</span>
+            <span class="event-card__date-month">Сар</span>
+          </div>
+          <div class="event-card__info">
+            <h4>Нийгмийн оролцооны сургалт</h4>
+            <p>Хөгжлийн бэрхшээлтэй иргэдийн нийгмийн оролцоо, өөрийгөө илэрхийлэх, эрхээ хамгаалах чадварыг хөгжүүлэх сургалт.</p>
+            <div class="event-card__meta">
+              <span>14:00 цаг</span>
+              <span>Соёлын төв</span>
+              <span>Бүртгэлтэй</span>
+            </div>
+          </div>
+        </div>
+        <div class="event-card rise rise--delay-4">
+          <div class="event-card__date">
+            <span class="event-card__date-day">19</span>
+            <span class="event-card__date-month">Сар</span>
+          </div>
+          <div class="event-card__info">
+            <h4>Мэргэжлийн сургалтын эхлэл</h4>
+            <p>Хөгжлийн бэрхшээлтэй иргэдэд зориулсан мэргэжлийн ур чадвар олгох сургалтын шинэ хэсэг эхэлж байна.</p>
+            <div class="event-card__meta">
+              <span>09:30 цаг</span>
+              <span>Сургалтын төв</span>
+              <span>Бүртгэлтэй</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ WHAT WE DO ═══════ -->
+  <section class="section" style="background:var(--white);">
+    <div class="container">
+      <div class="section-header rise">
+        <span class="label">Бидний ажил</span>
+        <h2>Үйл ажиллагааны <span class="accent-text">чиглэлүүд</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:var(--space-xl);">
+        <div class="card rise rise--delay-1">
+          <img src="assets/img/event-2.jpg" alt="Хөдөлмөр эрхлэлтийн дэмжлэг" class="card__image" loading="lazy">
+          <div class="card__body">
+            <div class="mono" style="font-size:var(--text-xs); color:var(--terracotta); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:var(--space-xs);">Код 7820</div>
+            <h4>Хөдөлмөр эрхлэлт</h4>
+            <p style="color:var(--text-secondary); font-size:var(--text-sm); margin-top:var(--space-sm);">Ажлын байр зуучлал, мэргэжил олгох сургалт, өөрсдийн хүчээр орлого олох боломжийг нэмэгдүүлэх.</p>
+          </div>
+        </div>
+        <div class="card rise rise--delay-2">
+          <img src="assets/img/event-3.jpg" alt="Нийгмийн оролцоо" class="card__image" loading="lazy">
+          <div class="card__body">
+            <div class="mono" style="font-size:var(--text-xs); color:var(--terracotta); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:var(--space-xs);">Код 8211</div>
+            <h4>Нийгмийн оролцоо</h4>
+            <p style="color:var(--text-secondary); font-size:var(--text-sm); margin-top:var(--space-sm);">Хөгжлийн бэрхшээлтэй иргэдийг нийгмийн амьдралд идэвхтэй оролцуулах, тэгш эрхийг дэмжих.</p>
+          </div>
+        </div>
+        <div class="card rise rise--delay-3">
+          <img src="assets/img/carousel-1.jpg" alt="Мэдээлэл, сургалт" class="card__image" loading="lazy">
+          <div class="card__body">
+            <div class="mono" style="font-size:var(--text-xs); color:var(--terracotta); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:var(--space-xs);">Код 9499</div>
+            <h4>Мэдээлэл, сургалт</h4>
+            <p style="color:var(--text-secondary); font-size:var(--text-sm); margin-top:var(--space-sm);">Мэдээлэл хүргэх, сургалт зохион байгуулах, нийгмийн ойлголтыг нэмэгдүүлэх сурталчилгааны ажил.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ PAST ═══════ -->
+  <section class="section" style="background:var(--cream);">
+    <div class="container">
+      <div class="section-header rise">
+        <span class="label">Өмнөх үйл ажиллагаа</span>
+        <h2>Хийж <span class="accent-text">бүтээсэн нь</span></h2>
+        <div class="divider"></div>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:var(--space-xl);">
+        <div class="card rise rise--delay-1">
+          <img src="assets/img/gallery-2.jpg" alt="Сургалт" class="card__image" loading="lazy">
+          <div class="card__body">
+            <div class="mono" style="font-size:var(--text-xs); color:var(--terracotta); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:var(--space-xs);">[Огноо]</div>
+            <h4>[Үйл ажиллагааны нэр]</h4>
+            <p style="color:var(--text-secondary); font-size:var(--text-sm); margin-top:var(--space-sm);"><span style="color:var(--text-muted);">[Тайлбар нөхөх]</span></p>
+          </div>
+        </div>
+        <div class="card rise rise--delay-2">
+          <img src="assets/img/gallery-4.jpg" alt="Уулзалт" class="card__image" loading="lazy">
+          <div class="card__body">
+            <div class="mono" style="font-size:var(--text-xs); color:var(--terracotta); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:var(--space-xs);">[Огноо]</div>
+            <h4>[Үйл ажиллагааны нэр]</h4>
+            <p style="color:var(--text-secondary); font-size:var(--text-sm); margin-top:var(--space-sm);"><span style="color:var(--text-muted);">[Тайлбар нөхөх]</span></p>
+          </div>
+        </div>
+        <div class="card rise rise--delay-3">
+          <img src="assets/img/gallery-6.jpg" alt="Арга хэмжээ" class="card__image" loading="lazy">
+          <div class="card__body">
+            <div class="mono" style="font-size:var(--text-xs); color:var(--terracotta); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:var(--space-xs);">[Огноо]</div>
+            <h4>[Үйл ажиллагааны нэр]</h4>
+            <p style="color:var(--text-secondary); font-size:var(--text-sm); margin-top:var(--space-sm);"><span style="color:var(--text-muted);">[Тайлбар нөхөх]</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ GET INVOLVED ═══════ -->
+  <section class="section" style="background:var(--white);">
+    <div class="container container--narrow" style="text-align:center;">
+      <div class="rise">
+        <span class="label" style="color:var(--terracotta);">Оролцоо</span>
+        <h2 style="margin:var(--space-md) 0;">Хамтран ажиллах уу?</h2>
+        <div class="divider divider--center"></div>
+        <p style="color:var(--text-secondary); font-size:var(--text-lg); margin:var(--space-lg) auto var(--space-2xl); max-width:520px; line-height:1.7;">
+          Сайн дураараа ажиллах, сургалт зохион байгуулах, эсвэл хамтран
+          төсөл хэрэгжүүлэх &mdash; хөгжлийн бэрхшээлтэй иргэдийн
+          амьдралд оруулах таны хувь нэмэр чухал.
+        </p>
+        <a href="contact.html" class="btn btn--primary btn--large">Холбоо барих</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">
+            <span class="nav__logo-icon" style="width:30px; height:30px; font-size:0.7rem;">ТБ</span>
+            Төв аймгийн ХБИХ
+          </div>
+          <p class="footer__desc">Хөгжлийн бэрхшээлтэй иргэдийн эрх, оролцоо, боломжийн төлөө 2014 оноос хойш ажиллаж байна.</p>
+          <p class="footer__desc" style="margin-top:var(--space-md);"><span class="mono" style="font-size:var(--text-xs);">Улсын бүртгэл: 8136629</span></p>
+        </div>
+        <div>
+          <h5>Цэс</h5>
+          <a href="index.html" class="footer__link">Нүүр</a>
+          <a href="about.html" class="footer__link">Бидний тухай</a>
+          <a href="events.html" class="footer__link">Үйл ажиллагаа</a>
+          <a href="contact.html" class="footer__link">Холбоо барих</a>
+        </div>
+        <div>
+          <h5>Чиглэлүүд</h5>
+          <a href="events.html" class="footer__link">Хөдөлмөр эрхлэлт</a>
+          <a href="events.html" class="footer__link">Нийгмийн оролцоо</a>
+          <a href="events.html" class="footer__link">Мэдээлэл, сургалт</a>
+          <a href="contact.html" class="footer__link">Сайн дурын ажил</a>
+        </div>
+        <div>
+          <h5>Холбоо барих</h5>
+          <p class="footer__desc">Хаяг: Төв аймаг, Зуунмод сум, 2-р баг, Ланс 11-15</p>
+          <p class="footer__desc" style="margin-top:var(--space-sm);">И-мэйл: <span style="color:var(--sage-light);">[и-мэйл хаяг оруулах]</span></p>
+          <p class="footer__desc">Утас: <span style="color:var(--sage-light);">[утасны дугаар оруулах]</span></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy">&copy; 2014&ndash;2026 Төв аймгийн хөгжлийн бэрхшээлтэй иргэдийн холбоо. Бүх эрх хуулиар хамгаалагдсан.</span>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook">f</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
