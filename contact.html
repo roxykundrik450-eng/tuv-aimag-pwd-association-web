@@ -1,221 +1,162 @@
 <!DOCTYPE html>
-<html lang="mn">
+<html lang="mn" class="govuk-template">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Холбоо барих | Төв аймгийн хөгжлийн бэрхшээлтэй иргэдийн холбоо</title>
-  <meta name="description" content="Төв аймгийн хөгжлийн бэрхшээлтэй иргэдийн холбоотой холбогдох. Хаяг: Төв аймаг, Зуунмод сум, 2-р баг, Ланс 11-15.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231A6B8A'/><text x='50' y='68' font-size='54' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>ТБ</text></svg>">
-  <link rel="stylesheet" href="assets/css/base.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Холбоо барих | Төв аймгийн ХБИХ</title>
+<meta name="description" content="Төв аймгийн хөгжлийн бэрхшээлтэй иргэдийн холбоотой холбогдох мэдээлэл.">
+<meta name="theme-color" content="#0b0c0c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230b0c0c'/%3E%3Ctext x='50' y='70' font-size='52' font-family='Arial' font-weight='bold' fill='%23ffffff' text-anchor='middle'%3E%D0%A2%D0%91%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/govuk-frontend-5.11.0.min.css">
+<link rel="stylesheet" href="assets/css/tuv.css">
 </head>
-<body>
+<body class="govuk-template__body">
 
-  <!-- ═══════ NAVIGATION ═══════ -->
-  <nav class="nav" role="navigation" aria-label="Үндсэн цэс">
-    <div class="container nav__inner">
-      <a href="index.html" class="nav__logo" aria-label="Нүүр хуудас">
-        <span class="nav__logo-icon">ТБ</span>
-        <span class="nav__logo-text">
-          Төв аймгийн ХБИХ
-          <small>Tuv Aimag Association of PWD</small>
-        </span>
+<a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Үндсэн агуулга руу шилжих</a>
+
+<header class="govuk-header" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="govuk-header__logo">
+      <a href="index.html" class="govuk-header__link govuk-header__link--homepage">
+        <span class="govuk-header__logotype"><span class="tuv-logotype">ТБ</span></span>
       </a>
-      <div class="nav__links" role="menubar">
-        <a href="index.html" class="nav__link" role="menuitem">Нүүр</a>
-        <a href="about.html" class="nav__link" role="menuitem">Бидний тухай</a>
-        <a href="events.html" class="nav__link" role="menuitem">Үйл ажиллагаа</a>
-        <a href="contact.html" class="nav__link nav__link--active" role="menuitem">Холбоо барих</a>
-        <a href="index.html#donate" class="nav__cta" role="menuitem">Хандивлах</a>
-      </div>
-      <button class="nav__toggle" aria-label="Цэс нээх" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
     </div>
-  </nav>
-
-  <!-- ═══════ PAGE HERO ═══════ -->
-  <section class="hero" style="position:relative; min-height:60vh; display:flex; align-items:center; background: linear-gradient(135deg, rgba(11,43,59,0.88) 0%, rgba(11,43,59,0.62) 100%), url('assets/img/carousel-2.jpg') center/cover no-repeat;">
-    <div class="container" style="padding-top:120px; padding-bottom:60px;">
-      <span class="label rise" style="color:var(--sage-light); display:block; margin-bottom:var(--space-md);">Холбоо барих</span>
-      <h1 class="rise rise--delay-1" style="color:var(--white); max-width:600px;">Хамтдаа <span style="color:var(--terracotta-light);">ярилцацгаая</span></h1>
-      <p class="rise rise--delay-2" style="color:rgba(247,244,239,0.75); font-size:var(--text-lg); max-width:520px; margin-top:var(--space-lg); line-height:1.7;">
-        Хандивлах, сайн дураараа ажиллах, эсвэл хамтран ажиллах хүсэлтэй бол
-        бидэнтэй холбогдоорой. Бид таны мессежийг хүлээн авна.
-      </p>
+    <div class="govuk-header__content">
+      <a href="index.html" class="govuk-header__link govuk-header__service-name">Төв аймгийн хөгжлийн бэрхшээлтэй иргэдийн холбоо</a>
     </div>
-  </section>
+  </div>
+</header>
 
-  <!-- ═══════ CONTACT INFO + FORM ═══════ -->
-  <section class="section" style="background:var(--cream);">
-    <div class="container">
-      <div style="display:grid; grid-template-columns:1fr 1.2fr; gap:var(--space-3xl); align-items:start;">
-        <!-- Contact Info -->
-        <div class="rise">
-          <h3 style="margin-bottom:var(--space-lg);">Шууд холбогдох</h3>
-          <p style="color:var(--text-secondary); line-height:1.7; margin-bottom:var(--space-2xl);">
-            Бид ажлын өдрүүдэд хүлээн авсан хүсэлтэд хариу өгөхийг хичээдэг.
-            Яаралтай асуудлаар шууд утсаар холбогдоно уу.
-          </p>
-
-          <div style="display:flex; flex-direction:column; gap:var(--space-xl);">
-            <div style="display:flex; gap:var(--space-lg); align-items:flex-start;">
-              <div style="width:48px; height:48px; background:var(--terracotta-glow); border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:1.2rem;">
-                &#9873;
-              </div>
-              <div>
-                <h5 style="margin-bottom:2px;">Хаяг</h5>
-                <p style="color:var(--text-secondary); font-size:var(--text-sm);">Төв аймаг, Зуунмод сум<br>2-р баг, Ланс 11-15</p>
-                <p style="color:var(--text-muted); font-size:var(--text-xs);">Улсын бүртгэлд бүртгэгдсэн хаяг</p>
-              </div>
-            </div>
-
-            <div style="display:flex; gap:var(--space-lg); align-items:flex-start;">
-              <div style="width:48px; height:48px; background:var(--terracotta-glow); border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:1.2rem;">
-                &#9993;
-              </div>
-              <div>
-                <h5 style="margin-bottom:2px;">И-мэйл</h5>
-                <p style="color:var(--text-secondary); font-size:var(--text-sm);">[и-мэйл хаяг оруулах]</p>
-                <p style="color:var(--text-muted); font-size:var(--text-xs);">Ерөнхий асуулт, хамтын ажиллагаа</p>
-              </div>
-            </div>
-
-            <div style="display:flex; gap:var(--space-lg); align-items:flex-start;">
-              <div style="width:48px; height:48px; background:var(--terracotta-glow); border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:1.2rem;">
-                &#9743;
-              </div>
-              <div>
-                <h5 style="margin-bottom:2px;">Утас</h5>
-                <p style="color:var(--text-secondary); font-size:var(--text-sm);">[утасны дугаар оруулах]</p>
-                <p style="color:var(--text-muted); font-size:var(--text-xs);">Ажлын өдөр, 09:00 &ndash; 17:00</p>
-              </div>
-            </div>
-
-            <div style="display:flex; gap:var(--space-lg); align-items:flex-start;">
-              <div style="width:48px; height:48px; background:var(--terracotta-glow); border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:1.2rem;">
-                &#128231;
-              </div>
-              <div>
-                <h5 style="margin-bottom:2px;">Удирдлага</h5>
-                <p style="color:var(--text-secondary); font-size:var(--text-sm);">Мажаа Эрдэнэжав</p>
-                <p style="color:var(--text-muted); font-size:var(--text-xs);">Удирдлагын зөвлөлийн дарга</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Contact Form -->
-        <div class="rise rise--delay-2" style="background:var(--white); border-radius:var(--radius-xl); padding:var(--space-2xl); box-shadow:var(--shadow-md);">
-          <h3 style="margin-bottom:var(--space-sm);">Мессеж илгээх</h3>
-          <p style="color:var(--text-secondary); font-size:var(--text-sm); margin-bottom:var(--space-xl);">Бид мессеж бүрийг уншдаг. Хэрхэн оролцохыг хүсэж байгаагаа хэлээрэй.</p>
-
-          <form onsubmit="return false;" style="display:flex; flex-direction:column; gap:var(--space-lg);">
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-lg);">
-              <div>
-                <label for="lastName" style="display:block; font-size:var(--text-sm); font-weight:600; margin-bottom:var(--space-xs); color:var(--text-primary);">Овог *</label>
-                <input type="text" id="lastName" name="lastName" required style="width:100%; padding:0.75rem 1rem; border:1.5px solid var(--border-medium); border-radius:var(--radius-md); font-family:var(--font-body); font-size:var(--text-sm); color:var(--text-primary); background:var(--cream); outline:none; transition: border-color 0.2s;" onfocus="this.style.borderColor='var(--terracotta)'" onblur="this.style.borderColor='var(--border-medium)'">
-              </div>
-              <div>
-                <label for="firstName" style="display:block; font-size:var(--text-sm); font-weight:600; margin-bottom:var(--space-xs); color:var(--text-primary);">Нэр *</label>
-                <input type="text" id="firstName" name="firstName" required style="width:100%; padding:0.75rem 1rem; border:1.5px solid var(--border-medium); border-radius:var(--radius-md); font-family:var(--font-body); font-size:var(--text-sm); color:var(--text-primary); background:var(--cream); outline:none; transition: border-color 0.2s;" onfocus="this.style.borderColor='var(--terracotta)'" onblur="this.style.borderColor='var(--border-medium)'">
-              </div>
-            </div>
-
-            <div>
-              <label for="email" style="display:block; font-size:var(--text-sm); font-weight:600; margin-bottom:var(--space-xs); color:var(--text-primary);">И-мэйл *</label>
-              <input type="email" id="email" name="email" required style="width:100%; padding:0.75rem 1rem; border:1.5px solid var(--border-medium); border-radius:var(--radius-md); font-family:var(--font-body); font-size:var(--text-sm); color:var(--text-primary); background:var(--cream); outline:none; transition: border-color 0.2s;" onfocus="this.style.borderColor='var(--terracotta)'" onblur="this.style.borderColor='var(--border-medium)'">
-            </div>
-
-            <div>
-              <label for="phone" style="display:block; font-size:var(--text-sm); font-weight:600; margin-bottom:var(--space-xs); color:var(--text-primary);">Утас</label>
-              <input type="tel" id="phone" name="phone" style="width:100%; padding:0.75rem 1rem; border:1.5px solid var(--border-medium); border-radius:var(--radius-md); font-family:var(--font-body); font-size:var(--text-sm); color:var(--text-primary); background:var(--cream); outline:none; transition: border-color 0.2s;" onfocus="this.style.borderColor='var(--terracotta)'" onblur="this.style.borderColor='var(--border-medium)'">
-            </div>
-
-            <div>
-              <label for="subject" style="display:block; font-size:var(--text-sm); font-weight:600; margin-bottom:var(--space-xs); color:var(--text-primary);">Сэдэв *</label>
-              <select id="subject" name="subject" required style="width:100%; padding:0.75rem 1rem; border:1.5px solid var(--border-medium); border-radius:var(--radius-md); font-family:var(--font-body); font-size:var(--text-sm); color:var(--text-primary); background:var(--cream); outline:none; appearance:auto; transition: border-color 0.2s;" onfocus="this.style.borderColor='var(--terracotta)'" onblur="this.style.borderColor='var(--border-medium)'">
-                <option value="">Сэдэв сонгох</option>
-                <option value="help">Тусламж, зөвлөгөө хүсэх</option>
-                <option value="donate">Хандивлах</option>
-                <option value="volunteer">Сайн дураараа ажиллах</option>
-                <option value="partner">Хамтран ажиллах</option>
-                <option value="press">Хэвлэл, мэдээлэл</option>
-                <option value="other">Бусад</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="message" style="display:block; font-size:var(--text-sm); font-weight:600; margin-bottom:var(--space-xs); color:var(--text-primary);">Мессеж *</label>
-              <textarea id="message" name="message" rows="5" required style="width:100%; padding:0.75rem 1rem; border:1.5px solid var(--border-medium); border-radius:var(--radius-md); font-family:var(--font-body); font-size:var(--text-sm); color:var(--text-primary); background:var(--cream); outline:none; resize:vertical; transition: border-color 0.2s;" onfocus="this.style.borderColor='var(--terracotta)'" onblur="this.style.borderColor='var(--border-medium)'"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn--primary btn--large" style="width:100%;">Мессеж илгээх</button>
-            <p style="color:var(--text-muted); font-size:var(--text-xs); text-align:center;">
-              Тэмдэглэл: Энэхүү маягтыг ажиллуулахын тулд серверийн тохиргоо шаардлагатай.
-            </p>
-          </form>
-        </div>
-      </div>
+<section aria-label="Цэс" class="govuk-service-navigation" data-module="govuk-service-navigation">
+  <div class="govuk-width-container">
+    <div class="govuk-service-navigation__container">
+      <nav aria-label="Үндсэн цэс" class="govuk-service-navigation__wrapper">
+        <ul class="govuk-service-navigation__list" id="navigation">
+          <li class="govuk-service-navigation__item">
+            <a class="govuk-service-navigation__link" href="index.html">Нүүр</a>
+          </li>
+          <li class="govuk-service-navigation__item">
+            <a class="govuk-service-navigation__link" href="about.html">Бидний тухай</a>
+          </li>
+          <li class="govuk-service-navigation__item">
+            <a class="govuk-service-navigation__link" href="services.html">Үйлчилгээ</a>
+          </li>
+          <li class="govuk-service-navigation__item">
+            <a class="govuk-service-navigation__link" href="record.html">Хийсэн ажил</a>
+          </li>
+          <li class="govuk-service-navigation__item">
+            <a class="govuk-service-navigation__link" href="transparency.html">Ил тод байдал</a>
+          </li>
+          <li class="govuk-service-navigation__item govuk-service-navigation__item--active">
+            <a class="govuk-service-navigation__link" href="contact.html" aria-current="true">Холбоо барих</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </section>
+  </div>
+</section>
+<main class="govuk-main-wrapper" id="main-content" role="main">
 
-  <!-- ═══════ LOCATION BAND ═══════ -->
-  <section style="background:var(--forest); padding:var(--space-3xl) 0; text-align:center;">
-    <div class="container container--narrow">
-      <div class="rise">
-        <h3 style="color:var(--cream); margin-bottom:var(--space-md);">Зуунмод хотод бидэнтэй уулзаарай</h3>
-        <p style="color:rgba(247,244,239,0.62); font-size:var(--text-sm); margin-bottom:var(--space-lg);">
-          Төв аймаг, Зуунмод сум, 2-р баг, Ланс 11-15
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Холбоо барих</h1>
+        <p class="govuk-body-l">
+          Хандивлах, сайн дураараа ажиллах, эсвэл хамтран ажиллах хүсэлтэй бол
+          бидэнтэй холбогдоорой.
         </p>
-        <div style="background:rgba(247,244,239,0.06); border:1px solid rgba(247,244,239,0.1); border-radius:var(--radius-lg); height:240px; display:flex; align-items:center; justify-content:center; color:rgba(247,244,239,0.35); font-family:var(--font-mono); font-size:var(--text-sm);">
-          Газрын зураг &mdash; энд Google Maps-ийг оруулна
-        </div>
       </div>
     </div>
-  </section>
-
-  <!-- ═══════ FOOTER ═══════ -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div>
-          <div class="footer__brand">
-            <span class="nav__logo-icon" style="width:30px; height:30px; font-size:0.7rem;">ТБ</span>
-            Төв аймгийн ХБИХ
-          </div>
-          <p class="footer__desc">Хөгжлийн бэрхшээлтэй иргэдийн эрх, оролцоо, боломжийн төлөө 2014 оноос хойш ажиллаж байна.</p>
-          <p class="footer__desc" style="margin-top:var(--space-md);"><span class="mono" style="font-size:var(--text-xs);">Улсын бүртгэл: 8136629</span></p>
-        </div>
-        <div>
-          <h5>Цэс</h5>
-          <a href="index.html" class="footer__link">Нүүр</a>
-          <a href="about.html" class="footer__link">Бидний тухай</a>
-          <a href="events.html" class="footer__link">Үйл ажиллагаа</a>
-          <a href="contact.html" class="footer__link">Холбоо барих</a>
-        </div>
-        <div>
-          <h5>Чиглэлүүд</h5>
-          <a href="events.html" class="footer__link">Хөдөлмөр эрхлэлт</a>
-          <a href="events.html" class="footer__link">Нийгмийн оролцоо</a>
-          <a href="events.html" class="footer__link">Мэдээлэл, сургалт</a>
-          <a href="contact.html" class="footer__link">Сайн дурын ажил</a>
-        </div>
-        <div>
-          <h5>Холбоо барих</h5>
-          <p class="footer__desc">Хаяг: Төв аймаг, Зуунмод сум, 2-р баг, Ланс 11-15</p>
-          <p class="footer__desc" style="margin-top:var(--space-sm);">И-мэйл: <span style="color:var(--sage-light);">[и-мэйл хаяг оруулах]</span></p>
-          <p class="footer__desc">Утас: <span style="color:var(--sage-light);">[утасны дугаар оруулах]</span></p>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <span class="footer__copy">&copy; 2014&ndash;2026 Төв аймгийн хөгжлийн бэрхшээлтэй иргэдийн холбоо. Бүх эрх хуулиар хамгаалагдсан.</span>
-        <div class="footer__social">
-          <a href="#" aria-label="Facebook">f</a>
-        </div>
+    <figure class="tuv-figure tuv-banner">
+      <img class="tuv-figure__img" src="assets/img/zuunmod-townhall.jpg" width="1600" height="1200" alt="Зуунмод сумын засаг захиргааны байр">
+      <figcaption class="govuk-body-s tuv-figure__caption">Зураг нь байгууллагын өөрийн зураг биш — нээлттэй лицензтэй Викимедиа Коммонс зураг. <a class="govuk-link" href="credits.html">Эх сурвалжийг үзнэ үү</a>.</figcaption>
+    </figure>
+  </div>
+  <div class="govuk-width-container">
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+    <h2 class="govuk-heading-l">Хаяг</h2>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-body-l">Төв аймаг, Зуунмод сум, 2-р баг, Ланс 11-15</p>
+        <p class="govuk-body-s">Энэ нь улсын бүртгэлд бүртгэгдсэн хаяг.</p>
+        <p class="govuk-body">
+          Холбоо нь 2023 оноос хойш «Аз жаргалын өргөө» төвд үйл ажиллагааны
+          байртай. <a class="govuk-link" href="record.html">Дэлгэрэнгүй</a>
+        </p>
       </div>
     </div>
-  </footer>
+  </div>
+  <div class="govuk-width-container">
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+    <h2 class="govuk-heading-l">Холбоо барих мэдээлэл</h2>
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-visually-hidden">Анхааруулга</span>
+        Утасны дугаар, и-мэйл хаягийг байгууллагаас баталгаажуулж байна.
+        Баталгаажсаны дараа энд байрлуулна.
+      </strong>
+    </div>
+    <div class="govuk-inset-text">
+      <strong>Яагаад хоосон бэ?</strong> Бид таамагласан утасны дугаар эсвэл
+      и-мэйл хаяг бичихгүй — буруу мэдээлэл нь холбогдохыг хүссэн хүнийг
+      төөрөгдүүлж, байгууллагын нэр хүндэд хор хөнөөлтэй. Одоогоор дээрх
+      хаягаар шууд хандана уу.
+    </div>
+  </div>
+  <div class="govuk-width-container">
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+    <h2 class="govuk-heading-l">Санал хүсэлт илгээх</h2>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-body">
+          Холбоо барих маягтыг байгууллагын и-мэйл хаяг баталгаажсаны дараа
+          идэвхжүүлнэ. Маягт нь хэрэглэгчийн өөрийн и-мэйл програмыг нээж,
+          захидлыг шууд байгууллагад илгээх зарчмаар ажиллана — бид гуравдагч
+          этгээдийн үйлчилгээ ашиглахгүй.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="govuk-width-container">
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+    <h2 class="govuk-heading-l">Хүртээмж</h2>
+    <p class="govuk-body">
+      Хэрэв та энэ вэбсайтаас хүртээмжийн саад тотгор олбол, эсвэл мэдээллийг
+      өөр хэлбэрээр (том үсэг, хэвлэмэл, дуугаар) авах шаардлагатай бол
+      бидэнд мэдэгдэнэ үү.
+    </p>
+  </div>
 
-  <script src="assets/js/main.js"></script>
+</main>
+
+<footer class="govuk-footer">
+  <div class="govuk-width-container">
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        <h2 class="govuk-visually-hidden">Холбоосууд</h2>
+        <ul class="govuk-footer__inline-list">
+          <li class="govuk-footer__inline-list-item"><a class="govuk-footer__link" href="about.html">Бидний тухай</a></li>
+          <li class="govuk-footer__inline-list-item"><a class="govuk-footer__link" href="services.html">Үйлчилгээ</a></li>
+          <li class="govuk-footer__inline-list-item"><a class="govuk-footer__link" href="record.html">Хийсэн ажил</a></li>
+          <li class="govuk-footer__inline-list-item"><a class="govuk-footer__link" href="transparency.html">Ил тод байдал</a></li>
+          <li class="govuk-footer__inline-list-item"><a class="govuk-footer__link" href="contact.html">Холбоо барих</a></li>
+          <li class="govuk-footer__inline-list-item"><a class="govuk-footer__link" href="credits.html">Зургийн эх сурвалж</a></li>
+        </ul>
+        <p class="govuk-footer__licence-description">
+          Төв аймгийн ХБИХ · Улсын бүртгэл 8136629 · Төв аймаг, Зуунмод сум, 2-р баг, Ланс 11-15
+        </p>
+        <p class="govuk-footer__licence-description">
+          Вэбсайтын суурь: <a class="govuk-footer__link" href="https://github.com/alphagov/govuk-frontend" rel="noopener">GOV.UK Frontend</a>
+          (MIT лиценз). Зургийн лицензийг <a class="govuk-footer__link" href="credits.html">эх сурвалж</a> хуудаснаас үзнэ үү.
+        </p>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <span class="govuk-footer__copyright-logo">&copy; 2014&ndash;2026</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

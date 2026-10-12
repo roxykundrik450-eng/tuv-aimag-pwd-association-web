@@ -1,0 +1,195 @@
+/* ============================================================
+   Төв аймгийн ХБИХ — 站点附加层
+   基于 GOV.UK Frontend v5.11.0（MIT, alphagov/govuk-frontend）
+   ------------------------------------------------------------
+   原则：不改 GOV.UK 的骨架与配色（它们经过对比度测试），
+   只补 GOV.UK 没有的东西 —— 照片组件。
+   不加圆角、不加阴影、不加渐变，保持同一套平面语言。
+   ============================================================ */
+
+/* ── 页眉标志 ── */
+.tuv-logotype {
+  display: inline-block;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  padding: 4px 0;
+  color: #ffffff;
+}
+
+/* ── 照片 ── */
+.tuv-figure {
+  margin: 0 0 30px;
+}
+.tuv-figure__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #f3f2f1;
+  border-bottom: 1px solid #b1b4b6;
+}
+.tuv-figure__caption {
+  margin-top: 10px;
+  color: #505a5f;
+}
+
+/* 首屏横幅：略高，撑住版面 */
+.tuv-banner .tuv-figure__img {
+  max-height: 460px;
+  object-fit: cover;
+}
+
+/* 侧栏照片：限制高度，避免窄栏里被拉成长条 */
+.tuv-figure--side .tuv-figure__img {
+  max-height: 260px;
+  object-fit: cover;
+}
+
+/* ── 照片卡 ── */
+.tuv-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+@media (max-width: 640px) {
+  .tuv-cards { grid-template-columns: 1fr; }
+}
+.tuv-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #b1b4b6;
+}
+.tuv-card__img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: #f3f2f1;
+  border-bottom: 1px solid #b1b4b6;
+}
+.tuv-card__body {
+  padding: 15px;
+  flex: 1;
+}
+.tuv-card__body .govuk-heading-s { margin-bottom: 8px; }
+.tuv-card__body p:last-child { margin-bottom: 0; }
+
+/* ── 两栏图 + 文 ── */
+.tuv-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+  margin-bottom: 30px;
+}
+@media (max-width: 640px) {
+  .tuv-split { grid-template-columns: 1fr; }
+}
+.tuv-split img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #b1b4b6;
+}
+
+/* ── 图片网格（小图集） ── */
+.tuv-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 30px;
+}
+@media (max-width: 900px) { .tuv-gallery { grid-template-columns: repeat(2, 1fr); } }
+.tuv-gallery img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  background: #f3f2f1;
+}
+
+/* ── 数据条（不用渐变，纯色块） ── */
+.tuv-stat {
+  border-left: 5px solid #1d70b8;
+  padding: 2px 0 2px 15px;
+  margin-bottom: 20px;
+}
+.tuv-stat__num {
+  font-size: 36px;
+  line-height: 1.1;
+  font-weight: 700;
+  margin: 0;
+  color: #0b0c0c;
+}
+.tuv-stat__label {
+  margin: 5px 0 0;
+  color: #505a5f;
+}
+
+/* ── 侧栏配图 ── */
+.tuv-side-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #b1b4b6;
+}
+
+/* ── 时间线 ── */
+.tuv-timeline {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0 0 0 20px;
+  border-left: 3px solid #b1b4b6;
+}
+.tuv-timeline__item {
+  position: relative;
+  padding: 0 0 22px 16px;
+}
+.tuv-timeline__item:last-child { padding-bottom: 0; }
+.tuv-timeline__item::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 4px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid #1d70b8;
+  box-sizing: border-box;
+}
+.tuv-timeline__item--now::before { background: #1d70b8; }
+.tuv-timeline__year {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  color: #505a5f;
+  margin-bottom: 4px;
+}
+.tuv-timeline__item h3 { margin-bottom: 5px; }
+.tuv-timeline__item p { margin-bottom: 0; }
+
+/* ── 页脚上方 ── */
+.tuv-footer-note {
+  border-top: 1px solid #b1b4b6;
+  padding-top: 20px;
+  margin-top: 40px;
+}
+
+/* ── 样张提示（正式交付时删除） ── */
+.tuv-demo {
+  background: #d4351c;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 6px 15px;
+}
+.tuv-demo b { font-weight: 700; }
+
+/* ── 来源链接（GOV.UK 没有的小标记） ── */
+.tuv-src::after {
+  content: " ↗";
+  font-size: .85em;
+}

@@ -1,281 +1,230 @@
 <!DOCTYPE html>
-<html lang="mn">
+<html lang="mn" class="govuk-template">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Бидний тухай | Төв аймгийн хөгжлийн бэрхшээлтэй иргэдийн холбоо</title>
-  <meta name="description" content="Төв аймгийн хөгжлийн бэрхшээлтэй иргэдийн холбооны эрхэм зорилго, үнэт зүйлс, түүхэн замнал, удирдлагын бүрэлдэхүүн.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231A6B8A'/><text x='50' y='68' font-size='54' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>ТБ</text></svg>">
-  <link rel="stylesheet" href="assets/css/base.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Бидний тухай | Төв аймгийн ХБИХ</title>
+<meta name="description" content="Төв аймгийн хөгжлийн бэрхшээлтэй иргэдийн холбооны эрхэм зорилго, үнэт зүйлс, замнал, удирдлага.">
+<meta name="theme-color" content="#0b0c0c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230b0c0c'/%3E%3Ctext x='50' y='70' font-size='52' font-family='Arial' font-weight='bold' fill='%23ffffff' text-anchor='middle'%3E%D0%A2%D0%91%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/govuk-frontend-5.11.0.min.css">
+<link rel="stylesheet" href="assets/css/tuv.css">
 </head>
-<body>
+<body class="govuk-template__body">
 
-  <!-- ═══════ NAVIGATION ═══════ -->
-  <nav class="nav" role="navigation" aria-label="Үндсэн цэс">
-    <div class="container nav__inner">
-      <a href="index.html" class="nav__logo" aria-label="Нүүр хуудас">
-        <span class="nav__logo-icon">ТБ</span>
-        <span class="nav__logo-text">
-          Төв аймгийн ХБИХ
-          <small>Tuv Aimag Association of PWD</small>
-        </span>
+<a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Үндсэн агуулга руу шилжих</a>
+
+<header class="govuk-header" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container">
+    <div class="govuk-header__logo">
+      <a href="index.html" class="govuk-header__link govuk-header__link--homepage">
+        <span class="govuk-header__logotype"><span class="tuv-logotype">ТБ</span></span>
       </a>
-      <div class="nav__links" role="menubar">
-        <a href="index.html" class="nav__link" role="menuitem">Нүүр</a>
-        <a href="about.html" class="nav__link nav__link--active" role="menuitem">Бидний тухай</a>
-        <a href="events.html" class="nav__link" role="menuitem">Үйл ажиллагаа</a>
-        <a href="contact.html" class="nav__link" role="menuitem">Холбоо барих</a>
-        <a href="index.html#donate" class="nav__cta" role="menuitem">Хандивлах</a>
-      </div>
-      <button class="nav__toggle" aria-label="Цэс нээх" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
     </div>
-  </nav>
-
-  <!-- ═══════ PAGE HERO ═══════ -->
-  <section class="hero" style="position:relative; min-height:70vh; display:flex; align-items:center; background: linear-gradient(135deg, rgba(11,43,59,0.88) 0%, rgba(11,43,59,0.62) 100%), url('assets/img/carousel-1.jpg') center/cover no-repeat;">
-    <div class="container" style="padding-top:120px; padding-bottom:60px;">
-      <span class="label rise" style="color:var(--sage-light); display:block; margin-bottom:var(--space-md);">Бидний тухай</span>
-      <h1 class="rise rise--delay-1" style="color:var(--white); max-width:680px;">Бид зөвхөн туслах биш &mdash; <span style="color:var(--terracotta-light);">хамтран ажилладаг</span></h1>
-      <p class="rise rise--delay-2" style="color:rgba(247,244,239,0.75); font-size:var(--text-lg); max-width:560px; margin-top:var(--space-lg); line-height:1.7;">
-        Асуудлыг хамгийн сайн мэддэг хүмүүс нь түүнийг шийдэх боломжтой
-        хүмүүс юм. Бидний үүрэг бол сонсох, дэмжих, дуу хоолойг нь өргөжүүлэх.
-      </p>
+    <div class="govuk-header__content">
+      <a href="index.html" class="govuk-header__link govuk-header__service-name">Төв аймгийн хөгжлийн бэрхшээлтэй иргэдийн холбоо</a>
     </div>
-  </section>
+  </div>
+</header>
 
-  <!-- ═══════ MISSION ═══════ -->
-  <section class="section" style="background:var(--white);">
-    <div class="container">
-      <div class="section-header rise" style="text-align:center;">
-        <span class="label">Эрхэм зорилго</span>
-        <h2>Нийгэмд <span class="accent-text">үндэслэсэн</span></h2>
-        <div class="divider divider--center"></div>
-      </div>
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-3xl); align-items:center;">
-        <div class="rise">
-          <h3 style="margin-bottom:var(--space-lg);">Тогтвортой өөрчлөлт нь дотоодоос эхэлдэг гэдэгт бид итгэдэг.</h3>
-          <p style="color:var(--text-secondary); line-height:1.8; margin-bottom:var(--space-md);">
-            2014 оноос хойш Төв аймгийн хөгжлийн бэрхшээлтэй иргэд, тэдний
-            гэр бүл, орон нутгийн идэвхтнүүдтэй хамтран ажиллаж ирсэн.
-            Бидэнд бэлэн төлөвлөгөө байхгүй &mdash; харин сонсох,
-            ойлгох, хамтдаа шийдэх хүсэл бий.
-          </p>
-          <p style="color:var(--text-secondary); line-height:1.8; margin-bottom:var(--space-md);">
-            Хөдөлмөр эрхлэлт, нийгмийн оролцоо, мэдээлэл, сургалт гэсэн
-            гурван үндсэн чиглэлээр үйл ажиллагаа явуулдаг. Эдгээр нь
-            улсын бүртгэлд бүртгэгдсэн үйл ажиллагааны чиглэлүүд
-            (7820, 8211, 9499) юм.
-          </p>
-          <p style="color:var(--text-secondary); line-height:1.8;">
-            Энэ бол энгийн хандив биш &mdash; хүний чадавх, эрхэд оруулсан хөрөнгө оруулалт.
-          </p>
-        </div>
-        <div class="rise rise--delay-2">
-          <img src="assets/img/carousel-2.jpg" alt="Хамтын уулзалт" style="border-radius:var(--radius-xl); width:100%; aspect-ratio:4/3; object-fit:cover;">
-        </div>
-      </div>
+<section aria-label="Цэс" class="govuk-service-navigation" data-module="govuk-service-navigation">
+  <div class="govuk-width-container">
+    <div class="govuk-service-navigation__container">
+      <nav aria-label="Үндсэн цэс" class="govuk-service-navigation__wrapper">
+        <ul class="govuk-service-navigation__list" id="navigation">
+          <li class="govuk-service-navigation__item">
+            <a class="govuk-service-navigation__link" href="index.html">Нүүр</a>
+          </li>
+          <li class="govuk-service-navigation__item govuk-service-navigation__item--active">
+            <a class="govuk-service-navigation__link" href="about.html" aria-current="true">Бидний тухай</a>
+          </li>
+          <li class="govuk-service-navigation__item">
+            <a class="govuk-service-navigation__link" href="services.html">Үйлчилгээ</a>
+          </li>
+          <li class="govuk-service-navigation__item">
+            <a class="govuk-service-navigation__link" href="record.html">Хийсэн ажил</a>
+          </li>
+          <li class="govuk-service-navigation__item">
+            <a class="govuk-service-navigation__link" href="transparency.html">Ил тод байдал</a>
+          </li>
+          <li class="govuk-service-navigation__item">
+            <a class="govuk-service-navigation__link" href="contact.html">Холбоо барих</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </section>
+  </div>
+</section>
+<main class="govuk-main-wrapper" id="main-content" role="main">
 
-  <!-- ═══════ VALUES ═══════ -->
-  <section class="section" style="background:var(--cream);">
-    <div class="container">
-      <div class="section-header rise" style="text-align:center;">
-        <span class="label">Үнэт зүйлс</span>
-        <h2>Биднийг <span class="accent-text">чиглүүлэх зарчмууд</span></h2>
-        <div class="divider divider--center"></div>
-      </div>
-      <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:var(--space-xl);">
-        <div class="card rise rise--delay-1" style="text-align:center; padding:var(--space-2xl);">
-          <div style="width:56px; height:56px; background:var(--terracotta-glow); border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; margin:0 auto var(--space-lg); font-size:1.5rem;">
-            &#9878;
-          </div>
-          <h4>Тэгш эрх</h4>
-          <p style="color:var(--text-secondary); font-size:var(--text-sm); margin-top:var(--space-sm); line-height:1.7;">Хөгжлийн бэрхшээлтэй иргэн бүр нийгмийн бүх салбарт тэгш оролцох эрхтэй.</p>
-        </div>
-        <div class="card rise rise--delay-2" style="text-align:center; padding:var(--space-2xl);">
-          <div style="width:56px; height:56px; background:var(--terracotta-glow); border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; margin:0 auto var(--space-lg); font-size:1.5rem;">
-            &#9734;
-          </div>
-          <h4>Хүртээмж</h4>
-          <p style="color:var(--text-secondary); font-size:var(--text-sm); margin-top:var(--space-sm); line-height:1.7;">Мэдээлэл, орчин, үйлчилгээ бүр хүн бүрт хүртээмжтэй байх ёстой.</p>
-        </div>
-        <div class="card rise rise--delay-3" style="text-align:center; padding:var(--space-2xl);">
-          <div style="width:56px; height:56px; background:var(--terracotta-glow); border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; margin:0 auto var(--space-lg); font-size:1.5rem;">
-            &#10047;
-          </div>
-          <h4>Оролцоо</h4>
-          <p style="color:var(--text-secondary); font-size:var(--text-sm); margin-top:var(--space-sm); line-height:1.7;">Хөгжлийн бэрхшээлтэй иргэдийг өөрсдийн амьдрал, шийдвэрт оролцуулах.</p>
-        </div>
-        <div class="card rise rise--delay-1" style="text-align:center; padding:var(--space-2xl);">
-          <div style="width:56px; height:56px; background:var(--terracotta-glow); border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; margin:0 auto var(--space-lg); font-size:1.5rem;">
-            &#9825;
-          </div>
-          <h4>Хүндэтгэл</h4>
-          <p style="color:var(--text-secondary); font-size:var(--text-sm); margin-top:var(--space-sm); line-height:1.7;">Хүн бүрийн нэр төр, сонголт, дуу хоолойг хүндэтгэх.</p>
-        </div>
-        <div class="card rise rise--delay-2" style="text-align:center; padding:var(--space-2xl);">
-          <div style="width:56px; height:56px; background:var(--terracotta-glow); border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; margin:0 auto var(--space-lg); font-size:1.5rem;">
-            &#9906;
-          </div>
-          <h4>Ил тод байдал</h4>
-          <p style="color:var(--text-secondary); font-size:var(--text-sm); margin-top:var(--space-sm); line-height:1.7;">Үйл ажиллагаа, санхүүгээ ил тод, хариуцлагатай хөтлөх.</p>
-        </div>
-        <div class="card rise rise--delay-3" style="text-align:center; padding:var(--space-2xl);">
-          <div style="width:56px; height:56px; background:var(--terracotta-glow); border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; margin:0 auto var(--space-lg); font-size:1.5rem;">
-            &#9733;
-          </div>
-          <h4>Тогтвортой байдал</h4>
-          <p style="color:var(--text-secondary); font-size:var(--text-sm); margin-top:var(--space-sm); line-height:1.7;">Богино хугацааны тусламж биш, урт хугацааны чадавх бүрдүүлэх.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════ TIMELINE ═══════ -->
-  <section class="section" style="background:var(--white);">
-    <div class="container container--narrow">
-      <div class="section-header rise" style="text-align:center;">
-        <span class="label">Бидний замнал</span>
-        <h2>Арван жилийн <span class="accent-text">түүх</span></h2>
-        <div class="divider divider--center"></div>
-      </div>
-      <div style="position:relative; padding-left:40px;">
-        <div style="position:absolute; left:15px; top:0; bottom:0; width:2px; background:var(--cream-deeper);"></div>
-
-        <div class="rise" style="position:relative; margin-bottom:var(--space-2xl);">
-          <div style="position:absolute; left:-33px; top:4px; width:12px; height:12px; background:var(--terracotta); border-radius:50%; border:3px solid var(--white);"></div>
-          <div class="mono" style="font-size:var(--text-xs); color:var(--terracotta); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:var(--space-xs);">2014</div>
-          <h4>Холбоо байгуулагдав</h4>
-          <p style="color:var(--text-secondary); font-size:var(--text-sm); margin-top:var(--space-xs);">Улсын бүртгэлийн 8136629 дугаартайгаар албан ёсоор бүртгэгдэж, Төв аймгийн хөгжлийн бэрхшээлтэй иргэдийн дуу хоолой болж эхлэв.</p>
-        </div>
-
-        <div class="rise rise--delay-1" style="position:relative; margin-bottom:var(--space-2xl);">
-          <div style="position:absolute; left:-33px; top:4px; width:12px; height:12px; background:var(--terracotta); border-radius:50%; border:3px solid var(--white);"></div>
-          <div class="mono" style="font-size:var(--text-xs); color:var(--terracotta); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:var(--space-xs);">2014&ndash;2019</div>
-          <h4>Сууриа бэхжүүлэх үе</h4>
-          <p style="color:var(--text-secondary); font-size:var(--text-sm); margin-top:var(--space-xs);">Байгууллагын удирдлага, гишүүнчлэл, үйл ажиллагааны чиглэлээ тогтворжуулж, орон нутгийн хөгжлийн бэрхшээлтэй иргэдийн итгэлийг олж авав.</p>
-        </div>
-
-        <div class="rise rise--delay-2" style="position:relative; margin-bottom:var(--space-2xl);">
-          <div style="position:absolute; left:-33px; top:4px; width:12px; height:12px; background:var(--terracotta); border-radius:50%; border:3px solid var(--white);"></div>
-          <div class="mono" style="font-size:var(--text-xs); color:var(--terracotta); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:var(--space-xs);">2021</div>
-          <h4>Удирдлага шинэчлэгдэв</h4>
-          <p style="color:var(--text-secondary); font-size:var(--text-sm); margin-top:var(--space-xs);">Удирдлагын зөвлөл шинэчлэгдэж, үйл ажиллагаагаа институцчлах, хамтын ажиллагааг өргөжүүлэх чиглэлд шинэ алхам хийв.</p>
-        </div>
-
-        <div class="rise rise--delay-3" style="position:relative; margin-bottom:var(--space-2xl);">
-          <div style="position:absolute; left:-33px; top:4px; width:12px; height:12px; background:var(--terracotta); border-radius:50%; border:3px solid var(--white);"></div>
-          <div class="mono" style="font-size:var(--text-xs); color:var(--terracotta); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:var(--space-xs);">2024</div>
-          <h4>Шинэ удирдлага</h4>
-          <p style="color:var(--text-secondary); font-size:var(--text-sm); margin-top:var(--space-xs);">Удирдлагын зөвлөлийн дарга шинэчлэгдэж, үйл ажиллагаагаа үргэлжлүүлэн өргөжүүлэв.</p>
-        </div>
-
-        <div class="rise rise--delay-4" style="position:relative;">
-          <div style="position:absolute; left:-33px; top:4px; width:12px; height:12px; background:var(--terracotta-light); border-radius:50%; border:3px solid var(--white);"></div>
-          <div class="mono" style="font-size:var(--text-xs); color:var(--terracotta); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:var(--space-xs);">2026 &mdash; одоо</div>
-          <h4>Цаашид харах нь</h4>
-          <p style="color:var(--text-secondary); font-size:var(--text-sm); margin-top:var(--space-xs);">Хөгжлийн бэрхшээлтэй иргэдийн хөдөлмөр эрхлэлт, нийгмийн оролцоог дэмжих ажлаа өргөжүүлж, хамтын ажиллагааг нэмэгдүүлж байна.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════ GOVERNANCE ═══════ -->
-  <section class="section" style="background:var(--cream);">
-    <div class="container">
-      <div class="section-header rise" style="text-align:center;">
-        <span class="label">Удирдлага</span>
-        <h2>Холбооны <span class="accent-text">удирдлага</span></h2>
-        <div class="divider divider--center"></div>
-      </div>
-      <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:var(--space-2xl); text-align:center;">
-        <div class="team-card rise rise--delay-1">
-          <img src="assets/img/team-1.jpg" alt="Удирдлагын зөвлөлийн дарга" class="team-card__avatar" loading="lazy">
-          <div class="team-card__name">Мажаа Эрдэнэжав</div>
-          <div class="team-card__role">Удирдлагын зөвлөлийн дарга</div>
-          <p class="team-card__bio">2024 оноос хойш удирдлагын зөвлөлийн дарга. Хөгжлийн бэрхшээлтэй иргэдийн эрх, оролцооны төлөө ажиллаж байна.</p>
-        </div>
-        <div class="team-card rise rise--delay-2">
-          <img src="assets/img/team-2.jpg" alt="Гишүүн" class="team-card__avatar" loading="lazy">
-          <div class="team-card__name"><span style="color:var(--text-muted);">[Нэр нөхөх]</span></div>
-          <div class="team-card__role">Удирдлагын зөвлөлийн гишүүн</div>
-          <p class="team-card__bio">Удирдлагын зөвлөлийн гишүүдийн мэдээллийг холбоогоос лавлана уу.</p>
-        </div>
-        <div class="team-card rise rise--delay-3">
-          <img src="assets/img/team-3.jpg" alt="Гүйцэтгэх ажилтан" class="team-card__avatar" loading="lazy">
-          <div class="team-card__name"><span style="color:var(--text-muted);">[Нэр нөхөх]</span></div>
-          <div class="team-card__role">Гүйцэтгэх ажилтан</div>
-          <p class="team-card__bio">Өдөр тутмын үйл ажиллагааг хариуцан ажилладаг гүйцэтгэх ажилтны мэдээлэл.</p>
-        </div>
-      </div>
-      <p style="text-align:center; color:var(--text-muted); font-size:var(--text-sm); margin-top:var(--space-2xl);">
-        Удирдлагын бүрэлдэхүүний мэдээлэл нь улсын бүртгэлийн сүүлийн өөрчлөлтийн дагуу.
-        Дотоод бүтэц, гишүүнчлэлийн дэлгэрэнгүйг <a href="contact.html">холбоо барих</a> хэсгээс асууна уу.
-      </p>
-    </div>
-  </section>
-
-  <!-- ═══════ CTA ═══════ -->
-  <section class="section--compact" style="background:var(--forest); text-align:center;">
-    <div class="container container--narrow">
-      <div class="rise">
-        <h2 style="color:var(--cream); margin-bottom:var(--space-md);">Хамтдаа өөрчлөлт авчрах уу?</h2>
-        <p style="color:rgba(247,244,239,0.68); font-size:var(--text-lg); margin-bottom:var(--space-xl); line-height:1.7;">
-          Хандивлах, сайн дураараа ажиллах, эсвэл мэдээлэл түгээх &mdash; үйлдэл бүр тооцогдоно.
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Бидний тухай</h1>
+        <p class="govuk-body-l">
+          2014 оноос хойш Төв аймгийн хөгжлийн бэрхшээлтэй иргэдийн эрх, оролцоо,
+          боломжийн төлөө ажиллаж байна.
         </p>
-        <div style="display:flex; gap:var(--space-md); justify-content:center; flex-wrap:wrap;">
-          <a href="index.html#donate" class="btn btn--primary btn--large">Хандивлах</a>
-          <a href="contact.html" class="btn btn--secondary btn--large" style="border-color:var(--cream); color:var(--cream);">Холбоо барих</a>
-        </div>
       </div>
     </div>
-  </section>
-
-  <!-- ═══════ FOOTER ═══════ -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__grid">
-        <div>
-          <div class="footer__brand">
-            <span class="nav__logo-icon" style="width:30px; height:30px; font-size:0.7rem;">ТБ</span>
-            Төв аймгийн ХБИХ
+    <figure class="tuv-figure tuv-banner">
+      <img class="tuv-figure__img" src="assets/img/ger-festival.jpg" width="1600" height="1066" alt="Хөдөө орон нутгийн гэр хороолол">
+      <figcaption class="govuk-body-s tuv-figure__caption">Зураг нь байгууллагын өөрийн зураг биш — нээлттэй лицензтэй Викимедиа Коммонс зураг. <a class="govuk-link" href="credits.html">Эх сурвалжийг үзнэ үү</a>.</figcaption>
+    </figure>
+  </div>
+  <div class="govuk-width-container">
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+    <h2 class="govuk-heading-l">Эрхэм зорилго ба алсын хараа</h2>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-half">
+        <h3 class="govuk-heading-m">Эрхэм зорилго</h3>
+        <p class="govuk-body">
+          Хөгжлийн бэрхшээлтэй иргэн бүрийг нийгмийн бүрэн эрхт, идэвхтэй гишүүн
+          болгох; хөдөлмөр эрхлэлт, боловсрол, мэдээлэл, нийгмийн оролцооны тэгш
+          боломжоор хангах.
+        </p>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <h3 class="govuk-heading-m">Алсын хараа</h3>
+        <p class="govuk-body">
+          Хөгжлийн бэрхшээл нь оролцоог хязгаарлахгүй, харин нийгэм бүрэн дэмжиж,
+          хүн бүр өөрийн чадвараа нээж хөгжүүлэх боломжтой Төв аймаг.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="govuk-width-container">
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+    <h2 class="govuk-heading-l">Үнэт зүйлс</h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><strong>Тэгш эрх</strong> — хөгжлийн бэрхшээлтэй иргэн бүр нийгмийн бүх салбарт тэгш оролцох эрхтэй.</li>
+      <li><strong>Хүртээмж</strong> — мэдээлэл, орчин, үйлчилгээ бүр хүн бүрт хүртээмжтэй байх ёстой.</li>
+      <li><strong>Оролцоо</strong> — хөгжлийн бэрхшээлтэй иргэдийг өөрсдийн амьдрал, шийдвэрт оролцуулах.</li>
+      <li><strong>Хүндэтгэл</strong> — хүн бүрийн нэр төр, сонголт, дуу хоолойг хүндэтгэх.</li>
+      <li><strong>Ил тод байдал</strong> — үйл ажиллагаа, санхүүгээ ил тод, хариуцлагатай хөтлөх.</li>
+      <li><strong>Тогтвортой байдал</strong> — богино хугацааны тусламж биш, урт хугацааны чадавх бүрдүүлэх.</li>
+    </ul>
+  </div>
+  <div class="govuk-width-container">
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+    <h2 class="govuk-heading-l">Замнал</h2>
+    <ol class="tuv-timeline">
+      <li class="tuv-timeline__item">
+        <span class="tuv-timeline__year">2014</span>
+        <h3 class="govuk-heading-s">Холбоо байгуулагдав</h3>
+        <p class="govuk-body-s">Улсын бүртгэлийн 8136629 дугаартайгаар албан ёсоор бүртгэгдэж, Төв аймгийн хөгжлийн бэрхшээлтэй иргэдийн дуу хоолой болж эхлэв.</p>
+      </li>
+      <li class="tuv-timeline__item">
+        <span class="tuv-timeline__year">2021</span>
+        <h3 class="govuk-heading-s">Удирдлага шинэчлэгдэв</h3>
+        <p class="govuk-body-s">Удирдлагын зөвлөлийн дарга 2021 оны 11 дүгээр сарын 3-нд шинэчлэгдэв (бүртгэлийн мэдээлэл).</p>
+      </li>
+      <li class="tuv-timeline__item">
+        <span class="tuv-timeline__year">2023</span>
+        <h3 class="govuk-heading-s">«Аз жаргалын өргөө» төвд байртай болов</h3>
+        <p class="govuk-body-s">7 дугаар сард төв нээгдэж, холбоо төвд үйл ажиллагааны байртай болсон. 12 дугаар сард «Хөгжлийн бэрхшээл ба тэгш хүртээмж» чуулга уулзалтыг хамтран зохион байгуулав.</p>
+      </li>
+      <li class="tuv-timeline__item">
+        <span class="tuv-timeline__year">2024</span>
+        <h3 class="govuk-heading-s">Удирдлагын зөвлөлийн дарга шинэчлэгдэв</h3>
+        <p class="govuk-body-s">Мажаа Эрдэнэжав 2024 оны 8 дугаар сарын 16-наас УЗ-ийн даргаар ажиллаж байна (бүртгэлийн мэдээлэл).</p>
+      </li>
+      <li class="tuv-timeline__item tuv-timeline__item--now">
+        <span class="tuv-timeline__year">2026 — одоо</span>
+        <h3 class="govuk-heading-s">Үйл ажиллагаагаа үргэлжлүүлж байна</h3>
+        <p class="govuk-body-s">Хөдөлмөр эрхлэлт, нийгмийн оролцоо, мэдээлэл ба сургалтын чиглэлээр ажлаа үргэлжлүүлж байна.</p>
+      </li>
+    </ol>
+    <p class="govuk-body-s">Дээрх он дараалал нь улсын бүртгэлийн өөрчлөлт болон олон нийтийн эх сурвалжид үндэслэсэн.</p>
+  </div>
+  <div class="govuk-width-container">
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+    <h2 class="govuk-heading-l">Бүртгэлийн мэдээлэл</h2>
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Байгууллагын нэр</dt>
+            <dd class="govuk-summary-list__value">Төв аймгийн хөгжлийн бэрхшээлтэй иргэдийн холбоо</dd>
           </div>
-          <p class="footer__desc">Хөгжлийн бэрхшээлтэй иргэдийн эрх, оролцоо, боломжийн төлөө 2014 оноос хойш ажиллаж байна.</p>
-          <p class="footer__desc" style="margin-top:var(--space-md);"><span class="mono" style="font-size:var(--text-xs);">Улсын бүртгэл: 8136629</span></p>
-        </div>
-        <div>
-          <h5>Цэс</h5>
-          <a href="index.html" class="footer__link">Нүүр</a>
-          <a href="about.html" class="footer__link">Бидний тухай</a>
-          <a href="events.html" class="footer__link">Үйл ажиллагаа</a>
-          <a href="contact.html" class="footer__link">Холбоо барих</a>
-        </div>
-        <div>
-          <h5>Чиглэлүүд</h5>
-          <a href="events.html" class="footer__link">Хөдөлмөр эрхлэлт</a>
-          <a href="events.html" class="footer__link">Нийгмийн оролцоо</a>
-          <a href="events.html" class="footer__link">Мэдээлэл, сургалт</a>
-          <a href="contact.html" class="footer__link">Сайн дурын ажил</a>
-        </div>
-        <div>
-          <h5>Холбоо барих</h5>
-          <p class="footer__desc">Хаяг: Төв аймаг, Зуунмод сум, 2-р баг, Ланс 11-15</p>
-          <p class="footer__desc" style="margin-top:var(--space-sm);">И-мэйл: <span style="color:var(--sage-light);">[и-мэйл хаяг оруулах]</span></p>
-          <p class="footer__desc">Утас: <span style="color:var(--sage-light);">[утасны дугаар оруулах]</span></p>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <span class="footer__copy">&copy; 2014&ndash;2026 Төв аймгийн хөгжлийн бэрхшээлтэй иргэдийн холбоо. Бүх эрх хуулиар хамгаалагдсан.</span>
-        <div class="footer__social">
-          <a href="#" aria-label="Facebook">f</a>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Улсын бүртгэлийн дугаар</dt>
+            <dd class="govuk-summary-list__value"><strong>8136629</strong></dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Хэлбэр</dt>
+            <dd class="govuk-summary-list__value">Холбоо /ГҮТББ/</dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Төрөл</dt>
+            <dd class="govuk-summary-list__value">Ашгийн төлөө бус</dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Байгууллагдсан</dt>
+            <dd class="govuk-summary-list__value">2014-04-17</dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Бүртгэлтэй хаяг</dt>
+            <dd class="govuk-summary-list__value">Төв аймаг, Зуунмод сум, 2-р баг, Ланс 11-15</dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Үйл ажиллагааны чиглэл</dt>
+            <dd class="govuk-summary-list__value">7820 · 8211 · 9499</dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">УЗ-ийн дарга</dt>
+            <dd class="govuk-summary-list__value">Мажаа Эрдэнэжав (2024-08-16-наас)</dd>
+          </div>
+        </dl>
+<p class="govuk-body-s">Эх сурвалж: <a class="govuk-link tuv-src" href="https://opendatalab.mn/search/8136629" rel="noopener">opendatalab.mn — улсын бүртгэлийн өгөгдөл</a></p>
+  </div>
+  <div class="govuk-width-container">
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+    <h2 class="govuk-heading-l">Удирдлага</h2>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h3 class="govuk-heading-m">Мажаа Эрдэнэжав</h3>
+        <p class="govuk-body-s"><strong>Удирдлагын зөвлөлийн дарга</strong> — 2024-08-16-наас</p>
+        <p class="govuk-body">
+          Удирдлагын зөвлөлийн даргын нэр, албан тушаал нь улсын бүртгэлийн
+          мэдээллээр баталгаажсан.
+        </p>
+        <div class="govuk-inset-text">
+          <strong>Зураг байрлуулаагүй.</strong> Удирдлагын гишүүдийн гэрэл зураг,
+          намтар, бүрэлдэхүүний бүрэн жагсаалтыг байгууллагаас авсны дараа нэмнэ.
+          Бид танихгүй хүний зургийг ашиглахгүй.
         </div>
       </div>
     </div>
-  </footer>
+  </div>
 
-  <script src="assets/js/main.js"></script>
+</main>
+
+<footer class="govuk-footer">
+  <div class="govuk-width-container">
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+        <h2 class="govuk-visually-hidden">Холбоосууд</h2>
+        <ul class="govuk-footer__inline-list">
+          <li class="govuk-footer__inline-list-item"><a class="govuk-footer__link" href="about.html">Бидний тухай</a></li>
+          <li class="govuk-footer__inline-list-item"><a class="govuk-footer__link" href="services.html">Үйлчилгээ</a></li>
+          <li class="govuk-footer__inline-list-item"><a class="govuk-footer__link" href="record.html">Хийсэн ажил</a></li>
+          <li class="govuk-footer__inline-list-item"><a class="govuk-footer__link" href="transparency.html">Ил тод байдал</a></li>
+          <li class="govuk-footer__inline-list-item"><a class="govuk-footer__link" href="contact.html">Холбоо барих</a></li>
+          <li class="govuk-footer__inline-list-item"><a class="govuk-footer__link" href="credits.html">Зургийн эх сурвалж</a></li>
+        </ul>
+        <p class="govuk-footer__licence-description">
+          Төв аймгийн ХБИХ · Улсын бүртгэл 8136629 · Төв аймаг, Зуунмод сум, 2-р баг, Ланс 11-15
+        </p>
+        <p class="govuk-footer__licence-description">
+          Вэбсайтын суурь: <a class="govuk-footer__link" href="https://github.com/alphagov/govuk-frontend" rel="noopener">GOV.UK Frontend</a>
+          (MIT лиценз). Зургийн лицензийг <a class="govuk-footer__link" href="credits.html">эх сурвалж</a> хуудаснаас үзнэ үү.
+        </p>
+      </div>
+      <div class="govuk-footer__meta-item">
+        <span class="govuk-footer__copyright-logo">&copy; 2014&ndash;2026</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
