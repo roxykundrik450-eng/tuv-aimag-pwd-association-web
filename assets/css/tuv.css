@@ -1,13 +1,17 @@
-/* ============================================================
-   Төв аймгийн ХБИХ — 站点附加层
-   基于 GOV.UK Frontend v5.11.0（MIT, alphagov/govuk-frontend）
-   ------------------------------------------------------------
-   原则：不改 GOV.UK 的骨架与配色（它们经过对比度测试），
-   只补 GOV.UK 没有的东西 —— 照片组件。
-   不加圆角、不加阴影、不加渐变，保持同一套平面语言。
-   ============================================================ */
+/* ==========================================================================
+   Tov Aimag PWD Association — site layer
+   --------------------------------------------------------------------------
+   Built on GOV.UK Frontend v5.11.0 (MIT, alphagov/govuk-frontend).
+   GOV.UK's skeleton and colour palette are left untouched: they are contrast
+   tested and they are the reason this site is accessible. This file only adds
+   the photographic components GOV.UK does not have.
+   Same flat language as GOV.UK: no border radius, no shadows, no gradients.
 
-/* ── 页眉标志 ── */
+   Keep this file in sync with tools/build-site.py — every class here must be
+   referenced by a generated page. Unused rules are removed, not parked.
+   ========================================================================== */
+
+/* ── Header logotype ─────────────────────────────────────────────────── */
 .tuv-logotype {
   display: inline-block;
   font-size: 30px;
@@ -18,35 +22,7 @@
   color: #ffffff;
 }
 
-/* ── 照片 ── */
-.tuv-figure {
-  margin: 0 0 30px;
-}
-.tuv-figure__img {
-  display: block;
-  width: 100%;
-  height: auto;
-  background: #f3f2f1;
-  border-bottom: 1px solid #b1b4b6;
-}
-.tuv-figure__caption {
-  margin-top: 10px;
-  color: #505a5f;
-}
-
-/* 首屏横幅：略高，撑住版面 */
-.tuv-banner .tuv-figure__img {
-  max-height: 460px;
-  object-fit: cover;
-}
-
-/* 侧栏照片：限制高度，避免窄栏里被拉成长条 */
-.tuv-figure--side .tuv-figure__img {
-  max-height: 260px;
-  object-fit: cover;
-}
-
-/* ── 照片卡 ── */
+/* ── Three photo cards (the three registered activity areas) ─────────── */
 .tuv-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -76,25 +52,7 @@
 .tuv-card__body .govuk-heading-s { margin-bottom: 8px; }
 .tuv-card__body p:last-child { margin-bottom: 0; }
 
-/* ── 两栏图 + 文 ── */
-.tuv-split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  align-items: start;
-  margin-bottom: 30px;
-}
-@media (max-width: 640px) {
-  .tuv-split { grid-template-columns: 1fr; }
-}
-.tuv-split img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-bottom: 1px solid #b1b4b6;
-}
-
-/* ── 图片网格（小图集） ── */
+/* ── Photo grid (4 across) ───────────────────────────────────────────── */
 .tuv-gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -110,25 +68,85 @@
   background: #f3f2f1;
 }
 
-/* ── 数据条（不用渐变，纯色块） ── */
-.tuv-stat {
-  border-left: 5px solid #1d70b8;
-  padding: 2px 0 2px 15px;
-  margin-bottom: 20px;
-}
-.tuv-stat__num {
-  font-size: 36px;
-  line-height: 1.1;
-  font-weight: 700;
-  margin: 0;
-  color: #0b0c0c;
-}
-.tuv-stat__label {
-  margin: 5px 0 0;
-  color: #505a5f;
+/* Larger two-across variant */
+.tuv-gallery--2 { grid-template-columns: repeat(2, 1fr); }
+.tuv-gallery--2 img { height: 260px; }
+@media (max-width: 900px) {
+  .tuv-gallery--2 { grid-template-columns: repeat(2, 1fr); }
+  .tuv-gallery--2 img { height: 180px; }
 }
 
-/* ── 侧栏配图 ── */
+/* ── Photo tile grid: image on top, caption underneath ───────────────── */
+.tuv-tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px 20px;
+  margin-bottom: 35px;
+}
+@media (max-width: 900px) { .tuv-tiles { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .tuv-tiles { grid-template-columns: 1fr; } }
+
+.tuv-tile__img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  background: #f3f2f1;
+  border-bottom: 1px solid #b1b4b6;
+  margin-bottom: 10px;
+}
+.tuv-tile h3 {
+  font-size: 19px;
+  line-height: 1.25;
+  font-weight: 700;
+  margin: 0 0 5px;
+}
+.tuv-tile p {
+  margin: 0;
+  color: #505a5f;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+/* ── Feature: one large photo beside text, alternating sides ─────────── */
+.tuv-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.tuv-feature--flip .tuv-feature__media { order: 2; }
+@media (max-width: 700px) {
+  .tuv-feature { grid-template-columns: 1fr; gap: 20px; }
+  .tuv-feature--flip .tuv-feature__media { order: 0; }
+}
+.tuv-feature__media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 380px;
+  object-fit: cover;
+  border-bottom: 1px solid #b1b4b6;
+}
+.tuv-feature__body h3 { margin-top: 0; }
+.tuv-feature__body p:last-child { margin-bottom: 0; }
+
+/* ── Full-width photo band, used as a section break ──────────────────── */
+.tuv-band {
+  margin: 0 0 35px;
+}
+.tuv-band img {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  background: #f3f2f1;
+  border-bottom: 1px solid #b1b4b6;
+}
+@media (max-width: 700px) { .tuv-band img { height: 220px; } }
+
+/* ── Photo in a narrow column ────────────────────────────────────────── */
 .tuv-side-img {
   display: block;
   width: 100%;
@@ -136,7 +154,7 @@
   border-bottom: 1px solid #b1b4b6;
 }
 
-/* ── 时间线 ── */
+/* ── Timeline ────────────────────────────────────────────────────────── */
 .tuv-timeline {
   list-style: none;
   margin: 0 0 20px;
@@ -170,111 +188,3 @@
 }
 .tuv-timeline__item h3 { margin-bottom: 5px; }
 .tuv-timeline__item p { margin-bottom: 0; }
-
-/* ── 页脚上方 ── */
-.tuv-footer-note {
-  border-top: 1px solid #b1b4b6;
-  padding-top: 20px;
-  margin-top: 40px;
-}
-
-/* ── 样张提示（正式交付时删除） ── */
-.tuv-demo {
-  background: #d4351c;
-  color: #fff;
-  font-size: 14px;
-  text-align: center;
-  padding: 6px 15px;
-}
-.tuv-demo b { font-weight: 700; }
-
-/* ============================================================
-   以下为「让版面站得住」的图片组件 —— 这个组织的网站必须靠照片
-   说明它在做什么，所以照片要有分量，不能是零零散散的小缩略图。
-   ============================================================ */
-
-/* ── 图块网格：图上、说明在下，用于"我们在做什么" ── */
-.tuv-tiles {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px 20px;
-  margin-bottom: 35px;
-}
-@media (max-width: 900px) { .tuv-tiles { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 560px) { .tuv-tiles { grid-template-columns: 1fr; } }
-
-.tuv-tile__img {
-  display: block;
-  width: 100%;
-  height: 190px;
-  object-fit: cover;
-  background: #f3f2f1;
-  border-bottom: 1px solid #b1b4b6;
-  margin-bottom: 10px;
-}
-.tuv-tile h3 {
-  font-size: 19px;
-  line-height: 1.25;
-  font-weight: 700;
-  margin: 0 0 5px;
-}
-.tuv-tile p {
-  margin: 0;
-  color: #505a5f;
-  font-size: 16px;
-  line-height: 1.45;
-}
-
-/* ── 图文交替：一张大图 + 一段正文，左右轮换 ── */
-.tuv-feature {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 35px;
-  align-items: center;
-  margin-bottom: 40px;
-}
-.tuv-feature--flip .tuv-feature__media { order: 2; }
-@media (max-width: 700px) {
-  .tuv-feature { grid-template-columns: 1fr; gap: 20px; }
-  .tuv-feature--flip .tuv-feature__media { order: 0; }
-}
-.tuv-feature__media img {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: 380px;
-  object-fit: cover;
-  border-bottom: 1px solid #b1b4b6;
-}
-.tuv-feature__body h3 { margin-top: 0; }
-.tuv-feature__body p:last-child { margin-bottom: 0; }
-
-/* ── 全宽图片带：用于段落之间换气 ── */
-.tuv-band {
-  margin: 0 0 35px;
-}
-.tuv-band img {
-  display: block;
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
-  background: #f3f2f1;
-  border-bottom: 1px solid #b1b4b6;
-}
-@media (max-width: 700px) { .tuv-band img { height: 220px; } }
-
-/* ── 图集：比 .tuv-gallery 大一号，2 列 ── */
-.tuv-gallery--2 { grid-template-columns: repeat(2, 1fr); }
-.tuv-gallery--2 img { height: 260px; }
-@media (max-width: 900px) {
-  .tuv-gallery--2 { grid-template-columns: repeat(2, 1fr); }
-  .tuv-gallery--2 img { height: 180px; }
-}
-
-/* ── 窄栏里的说明文字 ── */
-.tuv-note {
-  color: #505a5f;
-  font-size: 16px;
-  line-height: 1.45;
-  margin: 0 0 20px;
-}
